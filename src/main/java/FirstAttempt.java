@@ -16,9 +16,10 @@ import java.io.File;
 public class FirstAttempt extends Application {
 
     private static int LEVEL = 0;
-    private static final int TOP_LEVEL = 3;
+    private static final int TOP_LEVEL = 6;
 
     public static void main(String[] args) {
+        // System.getProperties().entrySet().forEach(entry -> System.out.println(entry.getKey() + "\t" + entry.getValue()));
         launch(args);
     }
 
