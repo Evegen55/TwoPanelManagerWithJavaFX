@@ -5,14 +5,19 @@
 <?import javafx.scene.layout.*?>
 
 
-<TitledPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="FullCommander" textAlignment="CENTER" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<TitledPane maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="400.0" prefWidth="600.0"
+            text="FullCommander" textAlignment="CENTER"
+            xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controllers.Controller">
    <content>
-      <SplitPane dividerPositions="0.5" prefHeight="200.0" prefWidth="200.0">
+      <SplitPane dividerPositions="0.5" prefHeight="200.0" prefWidth="200.0" >
          <items>
             <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
               <tabs>
-                <Tab text="Untitled Tab 1" />
-                <Tab text="Untitled Tab 2" />
+                <Tab text="Tab with files"/>
+                <Tab text="Untitled Tab 2"  fx:id="myTabWithFiles" onSelectionChanged="#method"/>
               </tabs>
             </TabPane>
             <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">

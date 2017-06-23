@@ -47,7 +47,7 @@ public class FirstAttempt extends Application {
         primaryStage.show();
     }
 
-    private TreeItem<String> getNodesForDirectory(File directory) {
+    public static TreeItem<String> getNodesForDirectory(File directory) {
         TreeItem<String> root = new TreeItem<>(directory.getName());
         for (File f : directory.listFiles()) {
             //System.out.println("Loading " + f.getName());
